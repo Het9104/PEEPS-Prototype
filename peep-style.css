@@ -1,0 +1,89 @@
+.brand {
+    background-color: dodgerblue;
+    width: 700px;
+    height: 100vh;
+    background-image: url(imgs/1x/peep.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+.login_fields_child {
+    margin: 0 auto;
+    height: auto;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    align-items: center;
+}
+
+.login_fields_parent {
+    margin: 0 auto;
+    height: 670px;
+    width: 670px;
+    position: relative;
+    align-items: center;
+}
+
+.table_items {
+    font-size: 20px;
+    padding-top: 30px;
+}
+.email_field{
+    width: 100%;
+    border: none;
+    font: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 7px 0px 7px 7px;
+}
+.pass_field{
+    width: 100%;
+    border: none;
+    font: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 7px 0px 7px 7px;
+}
+.login_btn {
+    width: 60%;
+    border: none;
+    font: 50px;
+    border-radius: 30em;
+    padding: 7px 0px 7px 0px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+td {
+    padding-top: 7px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.login{
+    border-radius: 10px;
+    box-shadow: 2px 3px 9px #00000064;
+}
+label{
+    padding: 0px 0px 15px 0px;
+}
+tr > td > a{
+    color: #1e90ff; 
+    text-decoration: none;
+}
+table{
+    z-index: 1;
+    margin: 0 auto;
+    width: 90%;
+}
