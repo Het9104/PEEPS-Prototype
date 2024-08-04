@@ -1,198 +1,221 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #FAF9F6; 
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
 .brand {
     background-color: dodgerblue;
-    width: 700px;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     background-image: url(imgs/1x/peep.png);
     background-repeat: no-repeat;
     background-position: center;
-}
-
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #FAF9F6; 
-}
-
-.login_fields_child {
-    margin: 0 auto;
-    height: auto;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 80px;
-    align-items: center;
+    background-size: contain;
 }
 
 .login_fields_parent {
-    margin: 0 auto;
-    height: 670px;
-    width: 670px;
-    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.table_items {
-    font-size: 20px;
-    padding-top: 30px;
+.login_fields_child {
+    width: 90%;
+    max-width: 400px;
 }
-.email_field{
+
+.login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 9px #00000064;
+    padding: 20px;
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email_field, .pass_field {
     width: 100%;
     border: none;
-    font: 50px;
+    font-size: 1rem;
     background-color: #f0f0f0;
     border-radius: 5px;
-    padding: 7px 0px 7px 7px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
-.pass_field{
-    width: 100%;
-    border: none;
-    font: 50px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 7px 0px 7px 7px;
-}
+
 .login_btn {
-    width: 60%;
+    width: 100%;
     border: none;
-    font: 50px;
     border-radius: 30em;
-    padding: 7px 0px 7px 0px;
+    padding: 10px;
     background-color: #1e90ff;
     color: #ffffff;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-td {
-    padding-top: 7px;
-    padding-bottom: 14px;
-    padding-left: 30px;
-    padding-right: 40px;
+.login p {
+    text-align: center;
+    margin-top: 15px;
 }
-.login{
-    border-radius: 10px;
-    box-shadow: 2px 3px 9px #00000064;
-}
-label{
-    padding: 0px 0px 15px 0px;
-}
-tr > td > a{
-    color: #1e90ff; 
+
+.login a {
+    color: #1e90ff;
     text-decoration: none;
 }
-table{
-    z-index: 1;
-    margin: 0 auto;
-    width: 90%;
-}
-.header-bar{
-    width: 100vw;
+
+/* Main screen styles */
+.header-bar {
+    width: 100%;
     height: 60px;
     background-color: #1e90ff;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-.header-logo{
-    background-color: 000000;
-    width: 90px;
+
+.header-logo {
     height: 40px;
-    padding: 10px 10px 10px 20px;
-    display: inline-block;
 }
-ul{
+
+.header-quick-btn ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
-li{
-    display: inline;
-    padding: 10px;
-}
-.header-quick-btn{
-    color: #ffffff;
+
+.header-quick-btn li {
+    color: white;
     font-weight: 500;
     font-size: 18px;
-    padding: 1px 0px 0px 0px;
-    display: inline-block;
+    cursor: pointer;
 }
-.user-profile{
-    color: #ffffff;
+
+.user-profile {
+    color: white;
     font-weight: bolder;
     font-size: 18px;
-    display: inline-block;
-    align-content: center;
-    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.profile{
-    display: inline-block;
-    align-content: center;
-    border-radius: 50px;
-    height: 35px;
+.profile {
     width: 35px;
+    height: 35px;
     background-image: url(imgs/images.png);
-}
-.announce{
-    width: 300px;
-    background-color: white;
-    height: 310px;
-    border-radius: 13px;
-    box-shadow: 0px 0px 5px #00000064;
-}
-.news{
-    width: 300px;
-    background-color: white;
-    height: 310px;
-    border-radius: 13px;
-    box-shadow: 0px 0px 5px #00000064;
-}
-aside{
-    display: grid;
-    row-gap: 12px;
-    padding-top: 20px;
-    padding-left: 30px;
+    background-size: cover;
+    border-radius: 50%;
 }
 
-.content{
-    width: 800px;
-    height: 633px;
-    background-color: white;
-    border-radius: 13px;
-    box-shadow: 0px 0px 5px #00000064;
-}
-.area{
-    display:inline-flex;
-}
-main{
-    padding: 20px 0px 0px 35px;
+.main-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
 }
 
-.right-aside{
-    display: grid;
-    row-gap: 12px;
-    padding-top: 20px;
-    padding-right: 30px;
-}
-.notifications{
+.sidebar {
     width: 300px;
-    background-color: white;
-    height: 310px;
-    border-radius: 13px;
-    box-shadow: 0px 0px 5px #00000064;
 }
-.community{
-    width: 300px;
+
+.content {
+    flex-grow: 1;
     background-color: white;
-    height: 310px;
     border-radius: 13px;
-    box-shadow: 0px 0px 5px #00000064;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    min-height: 633px;
 }
-.main-scr{
-    padding: 10px 20px;
-    font-size: large;
+
+.widget {
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 310px;
+}
+
+.widget h3 {
+    margin-top: 0;
+    font-size: 15px;
     font-weight: 700;
+}
+
+/* Responsive design for main screen */
+@media (max-width: 1200px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .widget {
+        flex: 1;
+        height: auto;
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header-quick-btn {
+        margin: 10px 0;
+    }
+
+    .sidebar {
+        flex-direction: column;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .brand, .login_fields_parent {
+        width: 100%;
+    }
+
+    .brand {
+        height: 200px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
 }

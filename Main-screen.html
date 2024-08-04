@@ -3,59 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Screen</title>
+    <title>Main Screen</title>
     <link rel="stylesheet" href="peep-style.css">
 </head>
 <body>
-    <header>
-        <div class="header-bar">
-            <div>
-                <img src="imgs/1x/peep.png" class="header-logo">
-            </div>
-            <div class="header-quick-btn">
-                <ul>
-                    <li>Home</li>
-                    <li>Contact</li>
-                    <li>Report</li>
-                    <li>About</li>
-                </ul>
-            </div>
-            <div class="user-profile left-wrapper">
-                Het Patel
-                <div class="profile">
-                    Hi
-                </div>
-            </div>
+    <header class="header-bar">
+        <img src="imgs/1x/peep.png" alt="Logo" class="header-logo">
+        <nav class="header-quick-btn">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Report</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <span>Het Patel</span>
+            <div class="profile"></div>
         </div>
     </header>
-    <div class="area">
-        <aside>
-            <div class="announce">
-                <div class="main-scr">
-                    <label>Announcements</label>
-                </div>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <div class="widget announce">
+                <h3>Announcements</h3>
+                <!-- Add announcement content here -->
             </div>
-            <div class="news">
-                <div class="main-scr">
-                    <label>News</label>
-                </div>
+            <div class="widget news">
+                <h3>News</h3>
+                <!-- Add news content here -->
             </div>
         </aside>
-        <main>
-            <div class="content">
-    
-            </div>
+
+        <main class="content">
+            <!-- Add main content here -->
         </main>
-        <aside class="right-aside">
-            <div class="notifications">
-                <div class="main-scr">
-                    <label>Notifications</label>
-                </div>
+
+        <aside class="sidebar">
+            <div class="widget notifications">
+                <h3>Notifications</h3>
+                <!-- Add notifications content here -->
             </div>
-            <div class="community">
-                <div class="main-scr">
-                    <label>Communities</label>
-                </div>
+            <div class="widget community">
+                <h3>Communities</h3>
+                <!-- Add community content here -->
             </div>
         </aside>
     </div>
