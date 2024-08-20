@@ -165,11 +165,14 @@ body {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     left: 49%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .post-area {
     background-color: #1e90ff;
     margin-top: 8%;
+    z-index: 1;
+    position: relative;
 }
 
 .widget {
