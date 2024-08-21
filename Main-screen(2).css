@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+/* Nav bar styles */
+.header-bar {
+    width: 100%;
+    height: 8%;
+    background-color: #1e90ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0vw 1vw;
+}
+
+.header-logo {
+    height: 2.083vw;
+}
+
+.header-quick-btn ul {
+    list-style: none;
+    display: flex;
+    gap: 4vw;
+}
+
+.header-quick-btn li {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.user-profile {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    gap: 0.521vw;
+}
+
+.profile {
+    width: 2vw;
+    height: 2vw;
+    background-image: url(imgs/images.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Main user area focus*/
+.focal-area{
+    width: 100%;
+    height: 92%;
+    display: grid;
+    padding: 0.7vw;
+    grid-template-columns: 22% 58% 20%;
+}
+
+/* social network components */
+/* Left aside content */
+.left-area{
+    padding: 0% 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.community{
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    padding: 1vw;
+}
+
+h3{
+    filter: drop-shadow(0px 0px 1px rgb(0, 0, 0,0.4));
+    padding-bottom: 0.3vw;
+}
+
+/* main content */
+.middle-area{
+    padding: 0% 1%;
+    width: 100%;
+    height: 100%;
+}
+
+.structure{
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: 18% 64% 18%;
+}
+
+.left{
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid rgba(128, 128, 128, 0.263);
+}
+
+.center{
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid rgba(128, 128, 128, 0.263);
+    display: grid;
+    grid-template-rows: 5% 95%;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions{
+    width: 100%;
+    height: 100%;
+    margin-top: 2vw;
+    background: rgb(245, 245, 245);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.actions ul{
+    display: flex;
+    list-style: none;
+}
+
+.actions ul li{
+    padding: 0vw 0.7vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.post-area{
+    width: 100%;
+    height: calc(200px * 3);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-shrink: 0;
+}
+
+.post {
+    border: 1px black;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0; 
+}
+
+.user-photo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 7px;
+    gap: 2px;
+}
+
+.username {
+    flex-grow: 1;
+}
+
+.post-settings {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.post-image img {
+    display: flex;
+    max-width: 100%;
+    width: fit-content;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-actions {
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.action {
+    cursor: pointer;
+}
+
+.lcss {
+    margin-right: 5%;
+}
+
+.right{
+    height: 100%;
+    width: 100%;
+}
+
+/* Right aside content */
+.right-area{
+    padding: 0% 0.5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.Announcements{
+    width: 100%;
+    height: 48%;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    padding: 1vw;
+}
+
+.News{
+    width: 100%;
+    height: 48%;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    padding: 1vw;
+}
+
+/* Styles and dynamics */
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy.ttf);
+}
+
+.header-quick-btn li:hover{
+    text-decoration: underline white;
+}
+
+.user-profile:hover{
+    cursor: pointer;
+}
+
+.header-logo:hover{
+    cursor: pointer;
+}
+
+.actions li:hover{
+    text-decoration: underline black;
+    cursor: pointer;
+}
