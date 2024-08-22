@@ -12,6 +12,7 @@ html, body {
 
 .main{
     height: 100%;
+    background-color: #FAF9F6;
     width: 100%;
 }
 
@@ -29,7 +30,8 @@ html, body {
 }
 
 .header-logo {
-    height: 2.083vw;
+    height: 3.083vw;
+    width: 5.083vw;
 }
 
 .header-quick-btn ul {
@@ -48,7 +50,7 @@ html, body {
 .user-profile {
     color: white;
     font-weight: bolder;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     gap: 0.521vw;
@@ -74,6 +76,7 @@ html, body {
 /* social network components */
 /* Left aside content */
 .left-area{
+    color: white;
     padding: 0% 2%;
     width: 100%;
     height: 100%;
@@ -90,12 +93,15 @@ html, body {
 h3{
     filter: drop-shadow(0px 0px 1px rgb(0, 0, 0,0.4));
     padding-bottom: 0.3vw;
+    font-size: 1.2vw;
+    color: black;
 }
 
 /* main content */
 .middle-area{
+    color: white;
     padding: 0% 1%;
-    width: 100%;
+    width: 99.4%;
     height: 100%;
 }
 
@@ -137,6 +143,7 @@ h3{
 }
 
 .actions ul{
+    margin-top: 0.2vw;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -146,6 +153,7 @@ h3{
 i{
     font-size: 1.3vw;
     font-weight: 400;
+    color: black;
 }
 
 .actions ul li{
@@ -194,6 +202,7 @@ i{
 
 .username {
     flex-grow: 1;
+    color: black;
 }
 
 .post-settings {
@@ -233,6 +242,7 @@ i{
 
 /* Right aside content */
 .right-area{
+    color: white;
     padding: 0% 0.5%;
     width: 100%;
     height: 100%;
@@ -265,7 +275,8 @@ i{
 }
 
 .header-quick-btn li:hover{
-    text-decoration: underline white;
+    font-weight: bolder;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.325));
 }
 
 .user-profile:hover{
