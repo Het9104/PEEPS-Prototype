@@ -139,6 +139,13 @@ h3{
 .actions ul{
     display: flex;
     list-style: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+i{
+    font-size: 1.3vw;
+    font-weight: 400;
 }
 
 .actions ul li{
@@ -269,7 +276,92 @@ h3{
     cursor: pointer;
 }
 
-.actions li:hover{
-    text-decoration: underline black;
-    cursor: pointer;
+.ri-polaroid-2-line::after{
+    content: "feed";
+    font-family: Gilroy;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.ri-polaroid-2-line:hover::after{
+    display: initial;
+    color: red;
+}
+.ri-polaroid-2-line:hover{
+    color: red;
+}
+
+.ri-megaphone-line::after{
+    content: "announcement";
+    font-family: Gilroy;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.ri-megaphone-line:hover::after{
+    display: initial;
+    color: aqua;
+}
+.ri-megaphone-line:hover{
+    color: aqua;
+}
+
+.ri-community-line::after{
+    content: "community";
+    font-family: Gilroy;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.ri-community-line:hover::after{
+    display: initial;
+    color: yellow;
+}
+.ri-community-line:hover{
+    color: yellow;
+}
+
+.ri-news-line::after{
+    content: "news";
+    font-family: Gilroy;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.ri-news-line:hover::after{
+    display: initial;
+    color: green;
+}
+.ri-news-line:hover{
+    color: green;
+}
+
+.ri-notification-4-line::after{
+    content: "notification";
+    font-family: Gilroy;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.ri-notification-4-line:hover::after{
+    display: initial;
+    color: purple;
+}
+.ri-notification-4-line:hover{
+    color: purple;
+}
+
+.ri-chat-4-line::after{
+    content: "chats";
+    font-family: Gilroy;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.ri-chat-4-line:hover::after{
+    display: initial;
+    color: orange;
+}
+.ri-chat-4-line:hover{
+    color: orange;
 }
